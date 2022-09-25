@@ -11,7 +11,30 @@
 		09D669B028DADD50004F73CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D669AF28DADD50004F73CC /* ContentView.swift */; };
 		09D669B228DADD52004F73CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D669B128DADD52004F73CC /* Assets.xcassets */; };
 		09D669B528DADD52004F73CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D669B428DADD52004F73CC /* Preview Assets.xcassets */; };
+		09D669BD28DADDB9004F73CC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D669BC28DADDB9004F73CC /* LocationManager.swift */; };
+		09D669C428DAE3D5004F73CC /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D669C328DAE3D5004F73CC /* WeatherManager.swift */; };
+		09D669CA28DAE696004F73CC /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D669C928DAE696004F73CC /* WeatherData.swift */; };
+		09D669D328DAF1DB004F73CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D669D228DAF1DB004F73CC /* Constants.swift */; };
+		09D669D628DAFFD3004F73CC /* CurrentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D669D528DAFFD3004F73CC /* CurrentViewModel.swift */; };
+		09F081CD28DB153700075468 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F081CC28DB153700075468 /* ApiClient.swift */; };
+		09F081CF28DB6AAA00075468 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F081CE28DB6AAA00075468 /* HeaderView.swift */; };
+		09F081D728DBBC3D00075468 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F081D628DBBC3D00075468 /* Utils.swift */; };
+		09F081DF28DE075B00075468 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F081DE28DE075B00075468 /* Forecast.swift */; };
+		09F081E328DE66EF00075468 /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F081E228DE66EF00075468 /* ForecastView.swift */; };
+		09F081E728E0D73100075468 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F081E628E0D73100075468 /* ForecastViewModel.swift */; };
+		09F081E928E0DB8300075468 /* DuplicateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F081E828E0DB8300075468 /* DuplicateHelper.swift */; };
+		09F081EB28E0DC3800075468 /* DailyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F081EA28E0DC3800075468 /* DailyForecast.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09F081F428E1039800075468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09D669A228DADD50004F73CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09D669A928DADD50004F73CC;
+			remoteInfo = Assessment;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		09D669AA28DADD50004F73CC /* Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +42,31 @@
 		09D669AF28DADD50004F73CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		09D669B128DADD52004F73CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09D669B428DADD52004F73CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		09D669BC28DADDB9004F73CC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		09D669C328DAE3D5004F73CC /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		09D669C928DAE696004F73CC /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		09D669D228DAF1DB004F73CC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		09D669D528DAFFD3004F73CC /* CurrentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentViewModel.swift; sourceTree = "<group>"; };
+		09F081CC28DB153700075468 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		09F081CE28DB6AAA00075468 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		09F081D628DBBC3D00075468 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		09F081DE28DE075B00075468 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		09F081E228DE66EF00075468 /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
+		09F081E628E0D73100075468 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
+		09F081E828E0DB8300075468 /* DuplicateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateHelper.swift; sourceTree = "<group>"; };
+		09F081EA28E0DC3800075468 /* DailyForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecast.swift; sourceTree = "<group>"; };
+		09F081F028E1039800075468 /* AssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssessmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		09D669A728DADD50004F73CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09F081ED28E1039800075468 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				09D669AC28DADD50004F73CC /* Assessment */,
+				09F081F128E1039800075468 /* AssessmentTests */,
 				09D669AB28DADD50004F73CC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				09D669AA28DADD50004F73CC /* Assessment.app */,
+				09F081F028E1039800075468 /* AssessmentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +97,12 @@
 		09D669AC28DADD50004F73CC /* Assessment */ = {
 			isa = PBXGroup;
 			children = (
+				09D669D428DAFFBD004F73CC /* ViewModel */,
+				09D669D128DAF1CC004F73CC /* Utils */,
+				09D669C828DAE686004F73CC /* Model */,
+				09D669BE28DADF43004F73CC /* Views */,
+				09D669BB28DADDA6004F73CC /* Manager */,
 				09D669AD28DADD50004F73CC /* AssessmentApp.swift */,
-				09D669AF28DADD50004F73CC /* ContentView.swift */,
 				09D669B128DADD52004F73CC /* Assets.xcassets */,
 				09D669B328DADD52004F73CC /* Preview Content */,
 			);
@@ -65,6 +115,62 @@
 				09D669B428DADD52004F73CC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		09D669BB28DADDA6004F73CC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				09D669BC28DADDB9004F73CC /* LocationManager.swift */,
+				09D669C328DAE3D5004F73CC /* WeatherManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		09D669BE28DADF43004F73CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				09D669AF28DADD50004F73CC /* ContentView.swift */,
+				09F081CE28DB6AAA00075468 /* HeaderView.swift */,
+				09F081E228DE66EF00075468 /* ForecastView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		09D669C828DAE686004F73CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09D669C928DAE696004F73CC /* WeatherData.swift */,
+				09F081DE28DE075B00075468 /* Forecast.swift */,
+				09F081EA28E0DC3800075468 /* DailyForecast.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09D669D128DAF1CC004F73CC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				09D669D228DAF1DB004F73CC /* Constants.swift */,
+				09F081CC28DB153700075468 /* ApiClient.swift */,
+				09F081D628DBBC3D00075468 /* Utils.swift */,
+				09F081E828E0DB8300075468 /* DuplicateHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		09D669D428DAFFBD004F73CC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				09D669D528DAFFD3004F73CC /* CurrentViewModel.swift */,
+				09F081E628E0D73100075468 /* ForecastViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		09F081F128E1039800075468 /* AssessmentTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AssessmentTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +193,24 @@
 			productReference = 09D669AA28DADD50004F73CC /* Assessment.app */;
 			productType = "com.apple.product-type.application";
 		};
+		09F081EF28E1039800075468 /* AssessmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09F081F628E1039800075468 /* Build configuration list for PBXNativeTarget "AssessmentTests" */;
+			buildPhases = (
+				09F081EC28E1039800075468 /* Sources */,
+				09F081ED28E1039800075468 /* Frameworks */,
+				09F081EE28E1039800075468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09F081F528E1039800075468 /* PBXTargetDependency */,
+			);
+			name = AssessmentTests;
+			productName = AssessmentTests;
+			productReference = 09F081F028E1039800075468 /* AssessmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +223,10 @@
 				TargetAttributes = {
 					09D669A928DADD50004F73CC = {
 						CreatedOnToolsVersion = 14.0;
+					};
+					09F081EF28E1039800075468 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 09D669A928DADD50004F73CC;
 					};
 				};
 			};
@@ -116,6 +244,7 @@
 			projectRoot = "";
 			targets = (
 				09D669A928DADD50004F73CC /* Assessment */,
+				09F081EF28E1039800075468 /* AssessmentTests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +259,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09F081EE28E1039800075468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,12 +273,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F081CD28DB153700075468 /* ApiClient.swift in Sources */,
 				09D669B028DADD50004F73CC /* ContentView.swift in Sources */,
+				09F081DF28DE075B00075468 /* Forecast.swift in Sources */,
+				09F081E728E0D73100075468 /* ForecastViewModel.swift in Sources */,
+				09F081D728DBBC3D00075468 /* Utils.swift in Sources */,
+				09D669D628DAFFD3004F73CC /* CurrentViewModel.swift in Sources */,
+				09F081E928E0DB8300075468 /* DuplicateHelper.swift in Sources */,
+				09D669CA28DAE696004F73CC /* WeatherData.swift in Sources */,
+				09F081EB28E0DC3800075468 /* DailyForecast.swift in Sources */,
 				09D669AE28DADD50004F73CC /* AssessmentApp.swift in Sources */,
+				09D669C428DAE3D5004F73CC /* WeatherManager.swift in Sources */,
+				09F081CF28DB6AAA00075468 /* HeaderView.swift in Sources */,
+				09F081E328DE66EF00075468 /* ForecastView.swift in Sources */,
+				09D669BD28DADDB9004F73CC /* LocationManager.swift in Sources */,
+				09D669D328DAF1DB004F73CC /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09F081EC28E1039800075468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09F081F528E1039800075468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09D669A928DADD50004F73CC /* Assessment */;
+			targetProxy = 09F081F428E1039800075468 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		09D669B628DADD52004F73CC /* Debug */ = {
@@ -317,6 +481,42 @@
 			};
 			name = Release;
 		};
+		09F081F728E1039800075468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WT2R3KVP3A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = za.co.dvt.assessment.AssessmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Assessment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Assessment";
+			};
+			name = Debug;
+		};
+		09F081F828E1039800075468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WT2R3KVP3A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = za.co.dvt.assessment.AssessmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Assessment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Assessment";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +534,15 @@
 			buildConfigurations = (
 				09D669B928DADD52004F73CC /* Debug */,
 				09D669BA28DADD52004F73CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09F081F628E1039800075468 /* Build configuration list for PBXNativeTarget "AssessmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09F081F728E1039800075468 /* Debug */,
+				09F081F828E1039800075468 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
