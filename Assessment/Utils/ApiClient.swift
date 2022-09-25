@@ -22,7 +22,6 @@ struct APIClient{
             .tryMap {  result -> Response<T> in
                 
                 let value = try JSONDecoder().decode(T.self, from: result.data)
-                print(value)
                 return Response(value: value, response: result.response)
         }
         .receive(on: DispatchQueue.main)

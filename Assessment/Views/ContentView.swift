@@ -10,22 +10,25 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var viewModel = CurrentViewModel()
     @ObservedObject var forecastViewModel = ForecastViewModel()
+    @StateObject var monitor = Network()
+    @State private var showAlertSheet = false
 
     init() {
-//        UITableView.appearance().backgroundColor = viewModel.getThemeColor()
+         UITableView.appearance().backgroundColor = viewModel.getThemeColor()
         UITableView.appearance().separatorStyle = .none
-        
+        monitor.checkConnection()
+           
         
     }
     
     var body: some View {
-        GeometryReader{ geo in
-            ZStack(alignment: .top){
-               self.viewModel.getThemeViewColor()
-                VStack{
-                    Image(self.viewModel.Header())
-                        .resizable()
-                        .interpolation(.none)
+            GeometryReader{ geo in
+                ZStack(alignment: .top){
+                    self.viewModel.getThemeViewColor()
+                    VStack{
+                        Image(self.viewModel.Header())
+                            .resizable()
+                            .interpolation(.none)
                             .frame(height: geo.size.height / 2.9)
                             .overlay(HeaderView(
                                 temperature: "\(self.viewModel.formatDegree(val: self.viewModel.currentWeather.main?.temp ?? 0.0))°",
@@ -38,9 +41,9 @@ struct ContentView: View {
                                     .foregroundColor(.white)
                                     .font(.headline)
                                 Text("min")
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(.white)
-                                .font(.headline)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(.white)
+                                    .font(.headline)
                             }
                             Spacer()
                             VStack{
@@ -49,9 +52,9 @@ struct ContentView: View {
                                     .foregroundColor(.white)
                                     .font(.headline)
                                 Text("Current")
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(.white)
-                                .font(.headline)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(.white)
+                                    .font(.headline)
                             }
                             Spacer()
                             VStack{
@@ -60,35 +63,36 @@ struct ContentView: View {
                                     .foregroundColor(.white)
                                     .font(.headline)
                                 Text("max")
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(.white)
-                                .font(.headline)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(.white)
+                                    .font(.headline)
                                 
                             }
                         }
                         .frame(width: geo.size.width - 40)
                         Divider()
-                        .background(Color.white)
-                    
-                   
- 
-                         ForEach(self.forecastViewModel.weekDays){ data in
-                             ForecastViewRow(
+                            .background(Color.white)
+                        
+                        
+                        
+                        ForEach(self.forecastViewModel.weekDays){ data in
+                            ForecastViewRow(
                                 day: data.day ?? "",
                                 img: self.forecastViewModel.getImage(condition:data.condition ?? ""),
                                 temp: "\(self.viewModel.formatDegree(val: data.tempreture!) )°",
-                                 color: self.viewModel.getThemeViewColor())
- 
- 
-                         }
+                                color: self.viewModel.getThemeViewColor())
+                            
+                            
+                        }
+                        
+                        
+                    }
                     
-               
+                    
                 }
                 
-                
             }
-
-        }
+        
         
     }
         
