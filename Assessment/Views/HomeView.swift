@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
-
-struct ContentView: View {
+import Foundation
+import Combine
+import CoreLocation
+struct HomeView: View {
     @ObservedObject var viewModel = CurrentViewModel()
     @ObservedObject var forecastViewModel = ForecastViewModel()
     @StateObject var monitor = Network()
@@ -16,7 +18,7 @@ struct ContentView: View {
     init() {
          UITableView.appearance().backgroundColor = viewModel.getThemeColor()
         UITableView.appearance().separatorStyle = .none
-        monitor.checkConnection()
+     
            
         
     }

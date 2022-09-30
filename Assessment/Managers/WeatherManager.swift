@@ -16,6 +16,7 @@ class WeatherManager{
     func getCurrentWeather(latitude: CLLocationDegrees,longitude: CLLocationDegrees) -> AnyPublisher<ResponseBody?, Error> {
         
         guard let url = URL(string: "\(Constants.baseUrl)\(Constants.current_uri)?lat=\(latitude)&lon=\(longitude)&appid=\(Constants.apiKey)&units=\(Constants.units)") else { fatalError("Missing URL")}
+        print(url)
         let request = URLRequest(url: url)
         return WeatherManager.client.run(request)
             .map(\.value)

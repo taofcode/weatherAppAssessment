@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09D669AE28DADD50004F73CC /* AssessmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D669AD28DADD50004F73CC /* AssessmentApp.swift */; };
-		09D669B028DADD50004F73CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D669AF28DADD50004F73CC /* ContentView.swift */; };
+		09D669B028DADD50004F73CC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D669AF28DADD50004F73CC /* HomeView.swift */; };
 		09D669B228DADD52004F73CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D669B128DADD52004F73CC /* Assets.xcassets */; };
 		09D669B528DADD52004F73CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D669B428DADD52004F73CC /* Preview Assets.xcassets */; };
 		09D669BD28DADDB9004F73CC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D669BC28DADDB9004F73CC /* LocationManager.swift */; };
@@ -25,10 +25,22 @@
 		09F081E928E0DB8300075468 /* DuplicateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F081E828E0DB8300075468 /* DuplicateHelper.swift */; };
 		09F081EB28E0DC3800075468 /* DailyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F081EA28E0DC3800075468 /* DailyForecast.swift */; };
 		09F081FE28E1152600075468 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F081FD28E1152600075468 /* NetworkManager.swift */; };
+		09F0820728E2F23E00075468 /* Assessment_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0820628E2F23E00075468 /* Assessment_Tests.swift */; };
+		09F0820E28E2F31000075468 /* UnitTestingCurrentViewModel_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0820D28E2F31000075468 /* UnitTestingCurrentViewModel_Test.swift */; };
+		09F0821028E4C5CC00075468 /* LandingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0820F28E4C5CC00075468 /* LandingTabView.swift */; };
+		09F0821228E4C6FA00075468 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0821128E4C6FA00075468 /* FavouriteView.swift */; };
+		09F0821428E4C77400075468 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0821328E4C77400075468 /* MapView.swift */; };
+		09F0821628E4C7F500075468 /* MapLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0821528E4C7F500075468 /* MapLocation.swift */; };
+		09F0821828E4E76300075468 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0821728E4E76300075468 /* MapViewModel.swift */; };
+		09F0821F28E6201B00075468 /* AssessmentDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09F0821D28E6201B00075468 /* AssessmentDataModel.xcdatamodeld */; };
+		09F0822128E6250900075468 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0822028E6250900075468 /* CoreDataManager.swift */; };
+		09F0822328E6363200075468 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0822228E6363200075468 /* WeatherView.swift */; };
+		09F0822728E6694100075468 /* FavouriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0822628E6694100075468 /* FavouriteViewModel.swift */; };
+		09F0823128E6D19A00075468 /* ForecastDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F0823028E6D19A00075468 /* ForecastDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		09F081F428E1039800075468 /* PBXContainerItemProxy */ = {
+		09F0820828E2F23E00075468 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 09D669A228DADD50004F73CC /* Project object */;
 			proxyType = 1;
@@ -40,7 +52,7 @@
 /* Begin PBXFileReference section */
 		09D669AA28DADD50004F73CC /* Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D669AD28DADD50004F73CC /* AssessmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssessmentApp.swift; sourceTree = "<group>"; };
-		09D669AF28DADD50004F73CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		09D669AF28DADD50004F73CC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		09D669B128DADD52004F73CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09D669B428DADD52004F73CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		09D669BC28DADDB9004F73CC /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -56,9 +68,21 @@
 		09F081E628E0D73100075468 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 		09F081E828E0DB8300075468 /* DuplicateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateHelper.swift; sourceTree = "<group>"; };
 		09F081EA28E0DC3800075468 /* DailyForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecast.swift; sourceTree = "<group>"; };
-		09F081F028E1039800075468 /* AssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssessmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F081FD28E1152600075468 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		09F081FF28E11B4600075468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		09F0820428E2F23E00075468 /* Assessment_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assessment_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09F0820628E2F23E00075468 /* Assessment_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assessment_Tests.swift; sourceTree = "<group>"; };
+		09F0820D28E2F31000075468 /* UnitTestingCurrentViewModel_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingCurrentViewModel_Test.swift; sourceTree = "<group>"; };
+		09F0820F28E4C5CC00075468 /* LandingTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingTabView.swift; sourceTree = "<group>"; };
+		09F0821128E4C6FA00075468 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
+		09F0821328E4C77400075468 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		09F0821528E4C7F500075468 /* MapLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocation.swift; sourceTree = "<group>"; };
+		09F0821728E4E76300075468 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		09F0821E28E6201B00075468 /* AssessmentDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AssessmentDataModel.xcdatamodel; sourceTree = "<group>"; };
+		09F0822028E6250900075468 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		09F0822228E6363200075468 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		09F0822628E6694100075468 /* FavouriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewModel.swift; sourceTree = "<group>"; };
+		09F0823028E6D19A00075468 /* ForecastDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +93,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09F081ED28E1039800075468 /* Frameworks */ = {
+		09F0820128E2F23E00075468 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -83,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				09D669AC28DADD50004F73CC /* Assessment */,
-				09F081F128E1039800075468 /* AssessmentTests */,
+				09F0820528E2F23E00075468 /* Assessment_Tests */,
 				09D669AB28DADD50004F73CC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,7 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				09D669AA28DADD50004F73CC /* Assessment.app */,
-				09F081F028E1039800075468 /* AssessmentTests.xctest */,
+				09F0820428E2F23E00075468 /* Assessment_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +124,7 @@
 		09D669AC28DADD50004F73CC /* Assessment */ = {
 			isa = PBXGroup;
 			children = (
+				09F0821C28E61FEA00075468 /* Data */,
 				09F081FF28E11B4600075468 /* Info.plist */,
 				09D669D428DAFFBD004F73CC /* ViewModels */,
 				09D669D128DAF1CC004F73CC /* Utils */,
@@ -127,6 +152,7 @@
 				09D669BC28DADDB9004F73CC /* LocationManager.swift */,
 				09D669C328DAE3D5004F73CC /* WeatherManager.swift */,
 				09F081FD28E1152600075468 /* NetworkManager.swift */,
+				09F0822028E6250900075468 /* CoreDataManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -134,9 +160,13 @@
 		09D669BE28DADF43004F73CC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				09D669AF28DADD50004F73CC /* ContentView.swift */,
+				09D669AF28DADD50004F73CC /* HomeView.swift */,
 				09F081CE28DB6AAA00075468 /* HeaderView.swift */,
 				09F081E228DE66EF00075468 /* ForecastView.swift */,
+				09F0820F28E4C5CC00075468 /* LandingTabView.swift */,
+				09F0821128E4C6FA00075468 /* FavouriteView.swift */,
+				09F0821328E4C77400075468 /* MapView.swift */,
+				09F0822228E6363200075468 /* WeatherView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -147,6 +177,7 @@
 				09D669C928DAE696004F73CC /* WeatherData.swift */,
 				09F081DE28DE075B00075468 /* Forecast.swift */,
 				09F081EA28E0DC3800075468 /* DailyForecast.swift */,
+				09F0821528E4C7F500075468 /* MapLocation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -167,15 +198,28 @@
 			children = (
 				09D669D528DAFFD3004F73CC /* CurrentViewModel.swift */,
 				09F081E628E0D73100075468 /* ForecastViewModel.swift */,
+				09F0821728E4E76300075468 /* MapViewModel.swift */,
+				09F0822628E6694100075468 /* FavouriteViewModel.swift */,
+				09F0823028E6D19A00075468 /* ForecastDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		09F081F128E1039800075468 /* AssessmentTests */ = {
+		09F0820528E2F23E00075468 /* Assessment_Tests */ = {
 			isa = PBXGroup;
 			children = (
+				09F0820628E2F23E00075468 /* Assessment_Tests.swift */,
+				09F0820D28E2F31000075468 /* UnitTestingCurrentViewModel_Test.swift */,
 			);
-			path = AssessmentTests;
+			path = Assessment_Tests;
+			sourceTree = "<group>";
+		};
+		09F0821C28E61FEA00075468 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				09F0821D28E6201B00075468 /* AssessmentDataModel.xcdatamodeld */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,22 +242,22 @@
 			productReference = 09D669AA28DADD50004F73CC /* Assessment.app */;
 			productType = "com.apple.product-type.application";
 		};
-		09F081EF28E1039800075468 /* AssessmentTests */ = {
+		09F0820328E2F23E00075468 /* Assessment_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 09F081F628E1039800075468 /* Build configuration list for PBXNativeTarget "AssessmentTests" */;
+			buildConfigurationList = 09F0820A28E2F23E00075468 /* Build configuration list for PBXNativeTarget "Assessment_Tests" */;
 			buildPhases = (
-				09F081EC28E1039800075468 /* Sources */,
-				09F081ED28E1039800075468 /* Frameworks */,
-				09F081EE28E1039800075468 /* Resources */,
+				09F0820028E2F23E00075468 /* Sources */,
+				09F0820128E2F23E00075468 /* Frameworks */,
+				09F0820228E2F23E00075468 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				09F081F528E1039800075468 /* PBXTargetDependency */,
+				09F0820928E2F23E00075468 /* PBXTargetDependency */,
 			);
-			name = AssessmentTests;
-			productName = AssessmentTests;
-			productReference = 09F081F028E1039800075468 /* AssessmentTests.xctest */;
+			name = Assessment_Tests;
+			productName = Assessment_Tests;
+			productReference = 09F0820428E2F23E00075468 /* Assessment_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -229,7 +273,7 @@
 					09D669A928DADD50004F73CC = {
 						CreatedOnToolsVersion = 14.0;
 					};
-					09F081EF28E1039800075468 = {
+					09F0820328E2F23E00075468 = {
 						CreatedOnToolsVersion = 14.0;
 						TestTargetID = 09D669A928DADD50004F73CC;
 					};
@@ -249,7 +293,7 @@
 			projectRoot = "";
 			targets = (
 				09D669A928DADD50004F73CC /* Assessment */,
-				09F081EF28E1039800075468 /* AssessmentTests */,
+				09F0820328E2F23E00075468 /* Assessment_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -264,7 +308,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09F081EE28E1039800075468 /* Resources */ = {
+		09F0820228E2F23E00075468 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -278,39 +322,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F0823128E6D19A00075468 /* ForecastDetailViewModel.swift in Sources */,
 				09F081CD28DB153700075468 /* ApiClient.swift in Sources */,
-				09D669B028DADD50004F73CC /* ContentView.swift in Sources */,
+				09D669B028DADD50004F73CC /* HomeView.swift in Sources */,
 				09F081DF28DE075B00075468 /* Forecast.swift in Sources */,
 				09F081E728E0D73100075468 /* ForecastViewModel.swift in Sources */,
 				09F081FE28E1152600075468 /* NetworkManager.swift in Sources */,
+				09F0821028E4C5CC00075468 /* LandingTabView.swift in Sources */,
 				09F081D728DBBC3D00075468 /* Utils.swift in Sources */,
 				09D669D628DAFFD3004F73CC /* CurrentViewModel.swift in Sources */,
+				09F0822128E6250900075468 /* CoreDataManager.swift in Sources */,
 				09F081E928E0DB8300075468 /* DuplicateHelper.swift in Sources */,
 				09D669CA28DAE696004F73CC /* WeatherData.swift in Sources */,
+				09F0822728E6694100075468 /* FavouriteViewModel.swift in Sources */,
 				09F081EB28E0DC3800075468 /* DailyForecast.swift in Sources */,
+				09F0821828E4E76300075468 /* MapViewModel.swift in Sources */,
+				09F0821628E4C7F500075468 /* MapLocation.swift in Sources */,
 				09D669AE28DADD50004F73CC /* AssessmentApp.swift in Sources */,
+				09F0822328E6363200075468 /* WeatherView.swift in Sources */,
 				09D669C428DAE3D5004F73CC /* WeatherManager.swift in Sources */,
 				09F081CF28DB6AAA00075468 /* HeaderView.swift in Sources */,
 				09F081E328DE66EF00075468 /* ForecastView.swift in Sources */,
+				09F0821428E4C77400075468 /* MapView.swift in Sources */,
 				09D669BD28DADDB9004F73CC /* LocationManager.swift in Sources */,
+				09F0821228E4C6FA00075468 /* FavouriteView.swift in Sources */,
+				09F0821F28E6201B00075468 /* AssessmentDataModel.xcdatamodeld in Sources */,
 				09D669D328DAF1DB004F73CC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09F081EC28E1039800075468 /* Sources */ = {
+		09F0820028E2F23E00075468 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F0820728E2F23E00075468 /* Assessment_Tests.swift in Sources */,
+				09F0820E28E2F31000075468 /* UnitTestingCurrentViewModel_Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		09F081F528E1039800075468 /* PBXTargetDependency */ = {
+		09F0820928E2F23E00075468 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 09D669A928DADD50004F73CC /* Assessment */;
-			targetProxy = 09F081F428E1039800075468 /* PBXContainerItemProxy */;
+			targetProxy = 09F0820828E2F23E00075468 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -495,7 +551,7 @@
 			};
 			name = Release;
 		};
-		09F081F728E1039800075468 /* Debug */ = {
+		09F0820B28E2F23E00075468 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,7 +560,7 @@
 				DEVELOPMENT_TEAM = WT2R3KVP3A;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = za.co.dvt.assessment.AssessmentTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "za.co.dvt.assessment.Assessment-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -513,7 +569,7 @@
 			};
 			name = Debug;
 		};
-		09F081F828E1039800075468 /* Release */ = {
+		09F0820C28E2F23E00075468 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -522,7 +578,7 @@
 				DEVELOPMENT_TEAM = WT2R3KVP3A;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = za.co.dvt.assessment.AssessmentTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "za.co.dvt.assessment.Assessment-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -552,16 +608,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		09F081F628E1039800075468 /* Build configuration list for PBXNativeTarget "AssessmentTests" */ = {
+		09F0820A28E2F23E00075468 /* Build configuration list for PBXNativeTarget "Assessment_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				09F081F728E1039800075468 /* Debug */,
-				09F081F828E1039800075468 /* Release */,
+				09F0820B28E2F23E00075468 /* Debug */,
+				09F0820C28E2F23E00075468 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		09F0821D28E6201B00075468 /* AssessmentDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				09F0821E28E6201B00075468 /* AssessmentDataModel.xcdatamodel */,
+			);
+			currentVersion = 09F0821E28E6201B00075468 /* AssessmentDataModel.xcdatamodel */;
+			path = AssessmentDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 09D669A228DADD50004F73CC /* Project object */;
 }

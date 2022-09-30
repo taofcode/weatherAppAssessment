@@ -17,8 +17,7 @@ class CurrentViewModel: ObservableObject{
     
     
     var data: AnyCancellable?
-    @Published var indicator = true
-
+ 
     
     var locationManager = LocationManager()
     
@@ -99,14 +98,11 @@ extension CurrentViewModel{
         data = WeatherManager().getCurrentWeather(latitude: lat, longitude: lon)
             .mapError({ (error) -> Error in
                 
-                print(error)
-                self.indicator = false
-                
+                print(error)                
                 return error
             })
             .sink(receiveCompletion: { _ in },
                   receiveValue: { weatherData in
-                    self.indicator = false
                     guard let weather = weatherData else { return }
                     self.currentWeather = weather
             })
