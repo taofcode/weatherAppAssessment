@@ -33,7 +33,7 @@ struct LandingTabView: View {
                 .tag(1)
                 .tabItem {
                     Text("Favorites")
-                    Image(systemName: "magnifyingglass")
+                    Image(systemName: "allergens")
                 }
             MapView()
                 .tag(2)

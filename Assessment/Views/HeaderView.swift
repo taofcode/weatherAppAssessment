@@ -9,14 +9,17 @@ import Foundation
 import SwiftUI
 
 struct HeaderView: View {
-    
+
+    var city: String
      var temperature: String
      var weather: String
     
     var body: some View{
         
         VStack{
-            
+            Text(city)
+           .foregroundColor(.white)
+           .font(.title)
              Text(temperature)
             .foregroundColor(.white)
             .font(.title)

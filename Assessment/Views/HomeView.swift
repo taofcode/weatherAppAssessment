@@ -33,6 +33,7 @@ struct HomeView: View {
                             .interpolation(.none)
                             .frame(height: geo.size.height / 2.9)
                             .overlay(HeaderView(
+                                city: "",
                                 temperature: "\(self.viewModel.formatDegree(val: self.viewModel.currentWeather.main?.temp ?? 0.0))°",
                                 weather: (self.viewModel.currentWeather.weather?.first!.description.uppercased() ?? "")!),
                                      alignment: .center)

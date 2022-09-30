@@ -13,10 +13,16 @@ struct FavouriteView: View {
 
     @State   var city: String = ""
     @ObservedObject var viewModel = CurrentViewModel()
-    @ObservedObject var favModel = FavouriteViewModel()
+    @ObservedObject var forecastViewModel = ForecastViewModel()
+    @ObservedObject var favouriteViewModel = FavouriteViewModel()
     @State var places: [Places] = []
+    @State var tempreture = 0.0
+    @State  var condition = ""
+    @State  var currentWeather: ResponseBody = ResponseBody()
+    @State var arrayWeather: [CurrentList] = [CurrentList]()
 
     
+  
 
     //
     var body: some View{
@@ -27,8 +33,8 @@ struct FavouriteView: View {
                     TextField("Add City", text: $city)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     Button("Save Favourites") {
-                        favModel.savePlace(city: city)
-                        favModel.populateData()
+                        favouriteViewModel.savePlace(city: city)
+                        favouriteViewModel.populateData()
                         
                     }
                     .foregroundColor(.white)
@@ -39,21 +45,21 @@ struct FavouriteView: View {
                     .cornerRadius(10)
                 }.padding()
                 List{
-                    ForEach(favModel.populateData(),id:\.id){place in
+                    ForEach(favouriteViewModel.populateData(),id:\.id){place in
 
                             VStack{
-                                NavigationLink(destination: WeatherView(place: place)){
+                                NavigationLink(destination: WeatherView(viewModel: viewModel,forecast: forecastViewModel,place:place)){
                                     Text("\(place.name!)")
                                     .foregroundColor(viewModel.getThemeViewColor())
                                     .font(.headline)
-                            }
+                                }
                         }
                         
-                    }.onDelete(perform: favModel.delete)
+                    }.onDelete(perform: favouriteViewModel.delete)
                 }
                 Spacer()
             }.onAppear(perform:{
-                favModel.populateData()
+                favouriteViewModel.populateData()
             })
         }.navigationBarTitle("Favourites")
     }

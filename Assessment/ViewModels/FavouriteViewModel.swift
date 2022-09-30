@@ -12,8 +12,7 @@ import Combine
 class FavouriteViewModel: ObservableObject{
     var locationManager = LocationManager()
     
-    @Published var currentWeather: ResponseBody = ResponseBody()
-
+ 
       var dataManager: CoreDataManger
     @State var  tempreture = 0.0
     @State var icon = ""
